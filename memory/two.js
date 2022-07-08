@@ -6,6 +6,7 @@ let score1 = 0;
 let score2 = 0;
 let score = score1 + score2;
 let player = 1;
+let nbCards = 3;
 
 let timerElement = document.getElementById('timer');
 let timer = localStorage.getItem('timer');
@@ -34,16 +35,6 @@ if (timer !== null && time !== null) {
     }
 }
 
-class Card {
-    name = "";
-    img = "";
-    constructor (name, img) {
-        this.name = name;
-        this.img = img;
-    }
-}
-
-let nbCards = 3;
 if (localStorage.getItem('nb-cards') !== null){
     nbCards = parseInt(localStorage.getItem('nb-cards'));
 }
@@ -73,6 +64,7 @@ function shuffle(array) {
         array[randomIndex], array[currentIndex]];
     }
 
+    // array.sort(0.5 - Math.random());
     return array;
 }
 
@@ -114,14 +106,17 @@ function startTimer() {
 
 function genCard(numberOfCards) {
     for(i=1; i <= numberOfCards / 2; i++) {
-        let ncard = new Card(strRandom(5), `images/${i}.png`);
+        let ncard = {
+            name : strRandom(5),
+            img : `images/${i}.png`
+        }; 
         cards.push(ncard);
         cards.push(ncard);
     }
 }
 
 function createBoard() {
-    let b = 0;
+    let b = 0; 
     for (i=1; i<=nbCards; i++){
         for (a=1; a<=4; a++){
             let card = cards[b];
@@ -130,7 +125,7 @@ function createBoard() {
             elementIMG.setAttribute("src", "images/blank.png");
             elementIMG.setAttribute("id", b);
             elementIMG.setAttribute("style", "border-radius: 10px;");
-            elementIMG.setAttribute("class", "card");
+            elementIMG.classList.add('card');
             elementIMG.addEventListener(`click`, () => flipCard(elementIMG));
 
 

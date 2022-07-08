@@ -1,9 +1,9 @@
-let cards = document.getElementById('nb-cartes');
-let sCards = document.getElementById('cartes');
+const cards = document.getElementById('nb-cartes');
+const sCards = document.getElementById('cartes');
 
-let timer = document.getElementById('timer');
+const timer = document.getElementById('timer');
 
-let select = document.getElementById('select');
+const select = document.getElementById('select');
 
 //Google
 function convertNumToTime(number) {
