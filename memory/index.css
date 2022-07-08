@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    src: url("Montserrat/Montserrat-VariableFont_wght.ttf") format('woff2');
+    font-family: "Montserrat";
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-image: url(images/sign.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.menu {
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.separator {
+    display: inline-block;
+    border-left: 3px solid #000000;
+    margin: 10px;
+}
+
+.select {
+    margin: 20px;
+    text-align: center;
+}
+
+.select h1 {
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.settings {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

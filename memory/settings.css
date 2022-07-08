@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    src: url("Montserrat/Montserrat-VariableFont_wght.ttf") format('woff2');
+    font-family: "Montserrat";
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-image: url(images/sign.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+form {
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto auto;
+    width: min-content;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.button {
+    padding: 10px;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+/* Google */
+.check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    border-radius: 0.25em;
+    width: 2em;
+    margin-left: -2.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position 0.15s ease-in-out;
+}
+
+.check-input:checked {
+    background-color: #4582ec;
+    border-color: #4582ec;
+    
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.check-input:indeterminate {
+    background-color: #4582ec;
+    border-color: #4582ec;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+
+.check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23a2c1f6'/%3e%3c/svg%3e");
+}

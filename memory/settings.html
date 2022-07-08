@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/blank.png" type="image/x-icon">
+    <title>Memory - Menu</title>
+
+    <!-- LINK -->
+    <link rel="stylesheet" href="settings.css">
+
+    <script src="settings.js" defer></script>
+</head>
+<body>
+    <!-- Titre -->
+    <div class="title">
+        <h1 class="text" style="padding-top: 100px;">Paramètres</h1>
+    </div>
+
+    <form method="post" id="form">
+        <label for="nb-cartes">Nombre de cartes (<span id="cartes"></span>)</label><br>
+        <input type="range" min="1" max="6" step="1" id="nb-cartes" value="3">
+
+        <br>
+        
+        <label for="flexSwitchCheckDefault">Activer le timer</label><br>
+        <input class="check-input" type="checkbox" id="timer"><br><br>
+
+
+        <label for="select">Temps</label>
+        <select id="select">
+            <option value=1>30s</option>
+            <option value=2>1m</option>
+            <option value=3>1m30s</option>
+            <option value=4>2m</option>
+            <option value=5>2m30s</option>
+            <option value=6>3m</option>
+            <option value=7>3m30s</option>
+            <option value=8>4m</option>
+            <option value=9>4m30</option>
+            <option value="10">5m</option>
+    </select>
+    </form>
+    <!-- retour au menu -->
+    <a href="./" class="button">Retour au menu</a>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/blank.png" type="image/x-icon">
+    <title>Memory - Solo</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="twoplayers.css">
+
+    <!-- script -->
+    <script src="two.js" defer></script>
+</head>
+<body id="body">
+    <!-- Titre et sous-titre -->
+    <div class="title">
+        <h1 class="text" style="padding-top: 100px;">Memory Game</h1>
+    </div>
+    <!-- scores -->
+    <h2 class="text">Score joueur 1: <span id="score1">0</span></h2>
+    <h2 class="text">Score joueur 2: <span id="score2">0</span></h2>
+    <div id="timer" class="timer">
+    </div>
+    <!-- grille -->
+    <div class="grid">
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+        <div class="line l4"></div>
+        <div class="line l5"></div>
+        <div class="line l6"></div>
+    </div>
+
+    <!-- c'est au joueur -->
+    <p class="play">C'est au joueur <span id="player"></span> de jouer</p>
+
+    <!-- fond flou -->
+    <div id="blur"></div>
+
+    <!-- retour au menu -->
+    <a href="./" class="button text">Retour au menu</a>
+</body>
+</html>
